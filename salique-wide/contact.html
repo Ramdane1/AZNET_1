@@ -25,18 +25,30 @@
 		<div class="c8">
 			<nav id="topNav">
 			<ul id="responsivemenu">
-				<li class="active"><a href="index.html"><i class="icon-home homeicon"></i></a></li>
-				<li><a href="#">Templates</a>
-				<ul style="display: none;">					
-					
-					<li><a href="about.html">About</a></li>
-					<li><a href="services.html">Services</a></li>					
-					<li><a href="testimonials.html">Testimonials</a></li>								
-					<li><a href="faq.html">F.A.Q.s</a></li>					
+				<li class="active"><a href="index.html"><i class="icon-home homeicon"></i><span class="showmobile">Home</span></a></li>
+				<li><a href="#">A propos de nous</a>
+				<ul style="display: none;">
+					<li><a href="about.html">Qui sommes nous?</a></li>
+					<!--<li><a href="services.html">Nos Services</a></li>-->				
+					<li><a href="testimonials.html">Temoignage</a></li>								
+					<!--<li><a href="faq.html">F.A.Q.s</a></li>-->			
 					<li><a href="gallery.html">Gallery</a></li>
 					<li><a href="timeline.html">Timeline</a></li>
-					<li class="last"><a href="404.html">404 Page</a></li>
+					<!--<li class="last"><a href="404.html">404 Page</a></li>-->
 				</ul>
+				</li>
+				<li><a href="#">Nos services</a>
+					<ul style="display: none;">
+						<li><a href="reseau.html">Réseaux informatique</a></li>
+						<li><a href="reseaulan.html">Réseaux LAN</a></li>
+						<li><a href="reseauwan.html">Réseaux WAN</a></li>
+						<li><a href="cablage.html">Câblage informatique</a></li>
+						<li><a href="cablageelec.html">Câblage électronique</a></li>
+						<li><a href="amenagement.html">Aménagement des sites</a></li>
+						<li><a href="genie.html">Génie civil</a></li>
+						<li><a href="securite.html">Sécurité</a></li>
+						<li><a href="wifi.html">Wi-Fi</a></li>
+					</ul>
 				</li>
 				<li><a href="#">Elements</a>
 				<ul style="display: none;">
@@ -80,7 +92,7 @@
 				<h1 class="titlehead">Contact</h1>
 			</div>
 			<div class="c4">
-				<h1 class="titlehead rightareaheader"><i class="icon-map-marker"></i> Call Us Now 1-318-107-432</h1>
+				<h1 class="titlehead rightareaheader"><i class="icon-phone"></i>  Contactez nous maintenant +212 37 77 64 60</h1>
 			</div>
 		</div>
 	</div>
@@ -91,15 +103,14 @@
 		<div class="shadowundertop"></div>
 		<div class="row space-bot">
 			<div class="c12">
-				<iframe class="gmap" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=disney+paris&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=39.371738,86.572266&amp;ie=UTF8&amp;hq=disney&amp;hnear=Paris,+%C3%8Ele-de-France,+France&amp;t=m&amp;fll=48.881877,2.535095&amp;fspn=0.512051,1.352692&amp;st=103241701817924407489&amp;rq=1&amp;ev=zo&amp;split=1&amp;ll=49.027964,2.772675&amp;spn=0.315159,0.585022&amp;z=10&amp;iwloc=D&amp;output=embed">
-				</iframe>
+				<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:380px;width:1200px;'><div id='gmap_canvas' style='height:380px;width:1200px;'></div><div><small><a href="http://embedgooglemaps.com">https://embedgooglemaps.com/fr/</a></small></div><div><small><a href="https://ilovebargain.ph/takatack.com-vouchers/">takatack voucher</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(34.0071491,-6.8492943999999625),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(34.0071491,-6.8492943999999625)});infowindow = new google.maps.InfoWindow({content:'<strong>AZ Net</strong><br>N° 11, Rue Dayte Erroumi, Suite 09, Agdal, <br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 			</div>
 		</div>
 		<div class="row space-top">
 			<!-- CONTACT FORM -->
-			<div class="c8 space-top">
+			<div id="aji" class="c8 space-top">
 				<h1 class="maintitle">
-				<span><i class="icon-envelope-alt"></i> Get in Touch</span>
+				<span><i class="icon-envelope-alt"></i> Entrer en contact</span>
 				</h1>
 				<div class="wrapcontact">
 					<div class="done">
@@ -110,41 +121,41 @@
 					<form method="post" action="contact.php" id="contactform">
 						<div class="form">
 							<div class="c6 noleftmargin">
-								<label>Name</label>
+								<label>Votre nom</label>
 								<input type="text" name="name">
 							</div>
 							<div class="c6 noleftmargin">
-								<label>E-mail address</label>
+								<label>Votre E-mail</label>
 								<input type="text" name="email">
 							</div>
-							<label>Message</label>
+							<label>Votre Message</label>
 							<textarea name="comment" class="ctextarea" rows="9"></textarea>
-							<input type="submit" id="submit" class="button" style="font-size:12px;" value="SUBMIT">
+							<input type="submit" id="submit" class="button" style="font-size:12px;" value="Envoyer">
 						</div>
 					</form>
 				</div>
 			</div>
 			<div class="c4 space-top">
 				<h1 class="maintitle">
-				<span><i class="icon-map-marker"></i> Locations</span>
+				<span><i class="icon-map-marker"></i> Localisation</span>
 				</h1>
 				<p>
-					<a class="link-2" href="more.html">The Company Name Inc.</a>
+					<a class="link-2" href="#">AZNet</a>
 				</p>
 				<dl>
-					<dt>2536 Zamora Road, Missisipi, 74C</dt>
-					<dd><span>Telephone:</span>+1 348 271 9483</dd>
-					<dd><span>FAX:</span>+1 243 794 5734</dd>
-					<dd>E-mail: <a href="more.html">mail@yourweb.com</a></dd>
+					<dt>N° 11, Rue Dayte Erroumi, Suite 09, Agdal, Rabat, Maroc</dt>
+					<dd><span>Telephone:</span>+212 37 77 64 60</dd>
+					<dd><span>FAX:</span>+212 37 77 64 54</dd>
+					<dd>E-mail: <a href="#aji">info@aznet.ma</a></dd>
 				</dl>
 				<br/>
-				<dl>
+				<!--<dl>
 					<dt>9863 - 9867 Mill Road, Cambridge, MG09 99HT</dt>
 					<dt>Zamora Road, Missisipi, 74C</dt>
 					<dd><span>Telephone:</span>+1 348 271 9483</dd>
 					<dd><span>FAX:</span>+1 243 794 5734</dd>
 					<dd>E-mail: <a href="more.html">mail@yourweb.com</a></dd>
-				</dl>
+				</dl>-->
 			</div>
 		</div>
 </div><!-- end grid -->
@@ -164,26 +175,15 @@
 			</div>
 			<!-- 2nd column -->
 			<div class="c3">
-				<h2 class="title"><i class="icon-twitter"></i> Follow us</h2>
+				<h2 class="title"><i class="icon-twitter"></i> Suivez nous</h2>
 				<hr class="footerstress">
-				<div id="ticker" class="query">
-				</div>
-			</div>
-			<!-- 3rd column -->
-			<div class="c3">
-				<h2 class="title"><i class="icon-envelope-alt"></i> Contact</h2>
-				<hr class="footerstress">
-				<dl>
-					<dt>2536 Zamora Road, Missisipi, 74C</dt>
-					<dd><span>Telephone:</span>+1 348 271 9483</dd>
-					<dd>E-mail: <a href="more.html">mail@yourweb.com</a></dd>
-				</dl>
-				<ul class="social-links" style="margin-top:15px;">
+				<div  class="query">
+					<ul class="social-links" style="margin-top:15px;">
 					<li class="twitter-link smallrightmargin">
 					<a href="#" class="twitter has-tip" target="_blank" title="Follow Us on Twitter">Twitter</a>
 					</li>
 					<li class="facebook-link smallrightmargin">
-					<a href="#" class="facebook has-tip" target="_blank" title="Join us on Facebook">Facebook</a>
+					<a href="https://www.facebook.com/aznet.ma/" class="facebook has-tip" target="_blank" title="Join us on Facebook">Facebook</a>
 					</li>
 					<li class="google-link smallrightmargin">
 					<a href="#" class="google has-tip" title="Google +" target="_blank">Google</a>
@@ -195,13 +195,25 @@
 					<a href="#" class="pinterest has-tip" title="Pinterest" target="_blank">Pinterest</a>
 					</li>
 				</ul>
+				</div>
+			</div>
+			<!-- 3rd column -->
+			<div class="c3">
+				<h2 class="title"><i class="icon-envelope-alt"></i> Contact</h2>
+				<hr class="footerstress">
+				<dl>
+					<dt>N° 11, Rue Dayte Erroumi, Suite 09, Agdal, Rabat, Maroc</dt>
+					<dd><span>Telephone:</span>+212 37 77 64 60</dd>
+					<dd>E-mail: <a href="#aji">info@aznet.ma</a></dd>
+				</dl>
+				
 			</div>
 			<!-- 4th column -->
 			<div class="c3">
-				<h2 class="title"><i class="icon-link"></i> Links</h2>
+				<h2 class="title"><i class="icon-link"></i> Liens</h2>
 				<hr class="footerstress">
 				<ul>
-					<li>Services</li>
+					<li>Nos Services</li>
 					<li>Privacy Policy</li>
 					<li>Shortcodes</li>
 					<li>Columns</li>
@@ -221,12 +233,12 @@
 <div class="copyright">
 	<div class="grid">
 		<div class="row">
-			<div class="c6">
-				 Your Name &copy; 2015. All Rights Reserved.
+			<div class="c6" >
+				 AZ NET &copy; 2017. All Rights Reserved.
 			</div>
 			<div class="c6">
-				<span class="right">
-				Premium Template by WowThemesNet </span>
+				<!--<span class="right">
+				Premium Template by WowThemesNet </span>-->
 			</div>
 		</div>
 	</div>
